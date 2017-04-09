@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- 内部样式-->
+    <style>
+       h1/*元素选择器*/{
+        background: darkred;
+    }
+        #aa/*id选择器*/{
+            background: yellow;
+        }
+        #bb{
+            background: green;
+
+        }
+        .ww/*class选择器*/{
+            color: white;
+        }
+
+        #bb p/* 后代选择器 bb下的div的颜色，只要是后代都会变化*/{
+            background: #00ff00;
+        }
+       #bb >p/*子代选择器  bb下的子代 只有子代*/{
+           background: #ff0000;
+       }
+    </style>
+    <!-- 外部样式-->
+    <!--<link rel="stylesheet" href="style.css"/>-->
+</head>
+    <body>
+    <!--内联样式-->
+    <h1 id="aa" class="ww" style="background: red; color: white; width: 200px;height: 200px"><!--color是字体颜色-->
+        嘿嘿
+    </h1>
+    <h1 id="aa" class="ww">
+        哈哈
+    </h1>
+    <h1 id="bb">
+        <p>啦啦啦啦啊
+        <h1>
+            <p>哈啊哈</p>
+        </h1>
+        </p>
+    </h1>
+    <h1>
+        <h2>
+            <p>oh my god</p>
+        </h2>
+    </h1>
+
+    <div> 你是猪吗</div>
+    </body>
+</html>

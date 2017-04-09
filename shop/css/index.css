@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;/*去掉链接下划线*/
+}
+img{
+    border: 0;
+}
+li {
+    list-style: none;/*去掉数字和点点点*/
+}
+#header{
+    background: url("../img/banner33.jpg") no-repeat center center;/*../是指上一层*/
+    height: 600px;
+}
+#cart{
+    opacity: 0.5;/*取值范围0~1*/
+    filter: alpha(opacity=50);/*IE6 取值范围1~100*/
+}
