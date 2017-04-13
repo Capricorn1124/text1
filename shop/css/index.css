@@ -15,7 +15,20 @@ li {
     background: url("../img/banner33.jpg") no-repeat center center;/*../是指上一层*/
     height: 600px;
 }
-#cart{
-    opacity: 0.5;/*取值范围0~1*/
-    filter: alpha(opacity=50);/*IE6 取值范围1~100*/
+#cart {
+    background-color: #000;
+    width: 26px;
+    height: 30px;
+    opacity: 0.5; /*取值范围0~1*/
+    filter: alpha(opacity=50); /*IE6 取值范围1~100*/
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer; /*鼠标经过的时候会变成小手*/
+}
+.title{
+    color: #fff;
+}
+#cart img{
+    vertical-align: middle;
 }
