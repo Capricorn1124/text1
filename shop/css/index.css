@@ -75,14 +75,19 @@ li {
     height: 40px;
     display: block;
 }
-.menu:hover{
-    background: #000;
+.menu a:hover{
+    background: #3c3b3b;
+
 }
-#submenu{
+.menu:hover #sub{
+    display: block;
+}
+#sub{
     width: 1140px;
     height: 300px;
-    background: #0077ff;
+    background: dodgerblue;
     margin-left: -190px;
+    display: none;
 
 
 }
