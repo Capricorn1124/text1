@@ -1,5 +1,7 @@
 /*header开始*/
-
+body{
+    height: 2000px;
+}
 #header{
     background: url("../img/banner33.jpg") no-repeat center center;/*../是指上一层*/
     height: 600px;
@@ -95,4 +97,14 @@
     color: #ffffff;
     font-weight: 700;
     font-size: large;
+}
+.sale.bg1{
+    width: 360px;
+    height: 210px;
+    background: url("../img/bg1.jpg");
+    margin-top: 30px;
+}
+.sale span{
+    color: #ffffff;
+
 }
