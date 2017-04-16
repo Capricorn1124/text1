@@ -1,16 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;/*去掉链接下划线*/
-}
-img{
-    border: 0;
-}
-li {
-    list-style: none;/*去掉数字和点点点*/
-}
+/*header开始*/
+
 #header{
     background: url("../img/banner33.jpg") no-repeat center center;/*../是指上一层*/
     height: 600px;
@@ -61,7 +50,7 @@ li {
     width: 380px;
     height: 100px;
 }
-#nav li{
+.menu{
     float: left;
     width: 190px;
     height: 40px;
@@ -79,23 +68,31 @@ li {
     background: #3c3b3b;
 
 }
-.menu:hover #sub{
+#sub a:hover{
+    text-decoration: underline;
+    background: none;
+}
+.menu:hover #sub/*当鼠标滑到menu时 sub变成块*/{
     display: block;
+}
+.list{
+    width: 180px;
+    height: 300px;
+    margin-left: 10px;
+    float: left;
 }
 #sub{
     width: 1140px;
     height: 300px;
-    background: dodgerblue;
+    background: pink;
     margin-left: -190px;
     display: none;
-
-
 }
-/*#nav li{*/
-    /*width: 190px;*/
-    /*height: 40px;*/
-    /*background: #fa558f;*/
-    /*float: left;*/
-    /*text-align: center;*/
-    /*line-height: 40px;*/
-/*}*/
+#sub a{
+    color: #000;
+}
+.head-title{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: large;
+}
