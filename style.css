@@ -1,2 +1,15 @@
-h1{background: red;
-     width: 200px;height: 200px;}
+#div1{
+     background-color: #00ff00;
+     width: 200px;
+     height: 200px;
+}
+#div2{
+     background-color: #ff0000;
+     width: 200px;
+     height: 200px;
+}
+#div3{
+     background-color: #fff00f;
+     width: 200px;
+     height: 200px;
+}

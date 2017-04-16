@@ -1,0 +1,21 @@
+/*css重置*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;/*去掉所有链接下的下划线*/
+}
+img{
+    border:0;/*图片没有边框*/
+}
+li{
+    list-style: none;/*列表没有数字*/
+}
+/*css重置结束*/
+.wrapper/*包含的意思*/{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
