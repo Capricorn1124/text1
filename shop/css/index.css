@@ -98,13 +98,79 @@ body{
     font-weight: 700;
     font-size: large;
 }
-.sale.bg1{
+/*new-product开始*/
+#new-product{
+    height: 266px;
+}
+.sale{
     width: 360px;
     height: 210px;
-    background: url("../img/bg1.jpg");
     margin-top: 30px;
+    overflow: hidden;
+    float: left;
+    margin-left: 14px;
 }
-.sale span{
+.sale.bg1{
+    background: url("../img/bg1.jpg");
+}
+.sale.bg2{
+    background: url("../img/bg2.jpg");
+}
+.sale.bg3{
+    background: url("../img/bg3.jpg");
+}
+.sale h4{
     color: #ffffff;
-
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 160px;
+    margin-left: 230px;
+}
+/*product开始*/
+.product{
+    height: 1000px;
+}
+.product-info{
+    width: 340px;
+    height: 420px;
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+    float:left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.product-info span{
+    background-color: deeppink;
+    color: #ffffff;
+    width: 41px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    text-align: center;
+}
+.product-info img{
+    width: 248px;
+    height: 248px;
+    border: 1px solid #ccc;
+}
+.product-detail h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-detail input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-detail{
+    width: 340px;
+    height: 192px;
+    background-color:lightgray;
+    overflow: hidden;
+}
+.product-detail button{
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    font-size: large;
+    font-weight: 700;
 }
