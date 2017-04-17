@@ -68,11 +68,11 @@ body{
     background: #3c3b3b;
 
 }
-#sub a:hover{
+.sub a:hover{
     text-decoration: underline;
     background: none;
 }
-.menu:hover #sub/*当鼠标滑到menu时 sub变成块*/{
+.menu:hover .sub/*当鼠标滑到menu时 sub变成块*/{
     display: block;
 }
 .list{
@@ -81,14 +81,14 @@ body{
     margin-left: 10px;
     float: left;
 }
-#sub{
+.sub{
     width: 1140px;
     height: 300px;
     background: pink;
     margin-left: -190px;
     display: none;
 }
-#sub a{
+.sub a{
     color: #000;
 }
 .head-title{
