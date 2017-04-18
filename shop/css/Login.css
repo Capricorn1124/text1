@@ -116,7 +116,7 @@ body{
     width: 300px;
     height: 30px;
 }
-#create button{
+#user button{
     display: block;
     margin-top: 20px;
     background-color: orange;
@@ -140,7 +140,46 @@ body{
     float: left;
 }
 #user-create{
+    padding-top: 50px;
     width: 570px;
     height: 360px;
     float: right;
+}
+#user-create h3{
+    padding-bottom: 30px;
+}
+#user-create p{
+    padding-bottom: 30px;
+    font-size: 20px;
+    opacity: 50;
+
+}
+#user-create button{
+    width: 120px;
+    height: 50px;
+}
+#user-create a{
+    font-size: 20px;
+    
+}
+/*#user-create a:hover button{*/
+    /*display: block;*/
+    /*background-color: coral;*/
+/*}*/
+
+/*footer¿ªÊ¼*/
+#footer{
+    width: 1903px;
+    height: 82px;
+    background-color: pink;
+    overflow: hidden;
+}
+#footer h3{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+#footer h4{
+    float: right;
+    margin-right: 60px;
+
 }
