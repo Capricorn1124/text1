@@ -3,7 +3,7 @@ body{
     height: 2000px;
 }
 #header{
-    background: url("../img/banner33.jpg") no-repeat center center;/*../是指上一层*/
+    background: url("../img/banner.jpg") no-repeat center center;/*../是指上一层*/
     height: 600px;
 }
 #header h1 {
