@@ -74,6 +74,7 @@ body{
 }
 .menu:hover .sub/*当鼠标滑到menu时 sub变成块*/{
     display: block;
+    position: relative;
 }
 .list{
     width: 180px;
@@ -87,6 +88,7 @@ body{
     background: pink;
     margin-left: -190px;
     display: none;
+    position: relative;
 }
 .sub a{
     color: #000;
@@ -99,7 +101,7 @@ body{
 }
 /*trademark开始*/
 #trademark{
-    height: 1400px;
+    height: 400px;
     overflow: hidden;
 }
 #trademark h2{
@@ -111,4 +113,70 @@ body{
     margin-top: 30px;
     margin-left: 20px;
     float: left;
+}
+/*结束*/
+/*product开始*/
+#product{
+height: 980px;
+}
+.product-info{
+    width: 340px;
+    height: 420px;
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+    float:left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.product-info span{
+    background-color: deeppink;
+    color: #ffffff;
+    width: 41px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    text-align: center;
+}
+.product-info img{
+    width: 248px;
+    height: 248px;
+    border: 1px solid #ccc;
+}
+.product-detail h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-detail input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-detail{
+    width: 340px;
+    height: 192px;
+    background-color:lightgray;
+    overflow: hidden;
+}
+.product-detail button{
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    font-size: large;
+    font-weight: 700;
+}
+
+/*footer开始*/
+#footer{
+    width: 1903px;
+    height: 82px;
+    background-color: pink;
+    overflow: hidden;
+}
+#footer h3{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+#footer h4{
+    float: right;
+    margin-right: 60px;
+
 }
