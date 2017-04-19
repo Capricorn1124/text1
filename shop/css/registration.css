@@ -156,6 +156,9 @@ body{
     letter-spacing: 2px;
     color: gray;
 }
+#user a:hover button{
+    background: #000;
+}
 /*footer*/
 /*footer¿ªÊ¼*/
 #footer{
