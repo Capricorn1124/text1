@@ -1,5 +1,5 @@
 body{
-    height: 3350px;
+    height: 3500px;
 }
 #header{
     background: url("../img/banner.jpg") no-repeat 0px 0px;/*../是指上一层*/
@@ -103,7 +103,7 @@ body{
 }
 /*body开始*/
 #body{
-    height: 3000px;
+    height: 3100px;
     overflow: hidden;
 }
 #body h2{
@@ -138,7 +138,7 @@ body{
     background-color: red;
 }
 .detail{
-    height: 720px;
+    height: 750px;
     overflow: hidden;
 }
 /*footer*/
