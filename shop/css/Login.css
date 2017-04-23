@@ -123,6 +123,7 @@ body{
     background-color: orange;
     width: 140px;
     height: 40px;
+    border-radius: 16px;
 }
 #user button:hover{
     background-color: #000
@@ -165,6 +166,7 @@ body{
 #user-create button{
     width: 120px;
     height: 50px;
+    border-radius: 16px;
 }
 #user-create button:hover{
     background: orange;
