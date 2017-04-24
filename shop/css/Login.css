@@ -163,10 +163,13 @@ body{
     opacity: 50;
 
 }
-#user-create button{
+#user-create button{/*button没有设置为块元素也能设置宽和高*/
     width: 120px;
     height: 50px;
     border-radius: 16px;
+    background-color: #fff;
+    border: #000 solid 1px;
+
 }
 #user-create button:hover{
     background: orange;
