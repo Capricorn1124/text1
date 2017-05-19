@@ -74,7 +74,7 @@
 1 2 3 4
 1 2 3 4 5
 其中，每行的数字之间有一个空格间隔。-->
-<script>
+<!--<script>
     document.write("1")
     document.write("<br>")
     document.write("1&nbsp2")
@@ -85,6 +85,35 @@
     document.write("<br>")
     document.write("1&nbsp2&nbsp3&nbsp4&nbsp5")
     document.write("<br>")
+</script>-->
+
+
+<!--6.在页面上输出如下图案。
+
+其中，每行的星号"*"之间有一个空格间隔。-->
+<!--<script>
+    document.write("&nbsp&nbsp&nbsp *")
+    document.write("<br>")
+    document.write("&nbsp&nbsp&nbsp* *")
+    document.write("<br>")
+    document.write("&nbsp&nbsp * * *")
+    document.write("<br>")
+    document.write("&nbsp&nbsp* * * *")
+    document.write("<br>")
+    document.write("&nbsp * * * * *")
+    document.write("<br>")
+</script>-->
+
+
+<!--7.有一个三位数x，被4除余2，被7除余3，被9除余5，请求出这个数。-->
+<script>
+    var x;
+    for(x=100;100<=x<999;x++){
+        if(x%4==2||x%7==3||x%9==5){
+            document.write(x);
+            document.write("</br>");
+        }
+    }
 </script>
 </body>
 </html>
