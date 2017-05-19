@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var today=new Date();
+    var year=today.getFullYear();
+//    if(year%4==0&&year%100!=0||year%400==0){
+    //         alert(today+"处于闰年")
+    //    }
+    //    else{
+    //        alert(today+"不处于闰年")
+    //    }
+    //
+    function getYear(year){
+        if(year%4==0&&year%100!=0||year%400==0)
+        {
+        return true;
+        }
+    else{
+        return false;
+        }
+    }
+    if(getYear(year)){
+        document.write("是闰年");
+
+    }
+    else{
+        document.write("不是闰年");
+    }
+
+</script>
+</body>
+</html>
