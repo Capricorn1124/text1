@@ -106,14 +106,32 @@
 
 
 <!--7.有一个三位数x，被4除余2，被7除余3，被9除余5，请求出这个数。-->
-<script>
+<!--<script>
     var x;
-    for(x=100;100<=x<999;x++){
-        if(x%4==2||x%7==3||x%9==5){
+    for(x=100;x<999;x++){
+        if(x%4==2&&x%7==3&&x%9==5){
             document.write(x);
             document.write("</br>");
         }
     }
-</script>
+</script>-->
+
+
+
+<!--8.求所有满足条件的四位数ABCD，它是13的倍数，且第3位数加上第2位数等于第4位数（即：A=B+C）。-->
+<!--（提示：对于四位数的整数x，通过Math.floor(x/1000)可求出第4位的数字，其他位数的提取也类似）-->
+<!--<script>
+    var x, y, z,n;
+    for(x=1000;x<=9999;x++){
+        n=Math.floor(x/1000);
+         y=Math.floor(x/100)%10;
+        z=Math.floor(x/10)%100;
+        if((x%13==0)&&(n==y+z)){
+            document.write(x+"<br>");
+        }
+
+    }
+</script>-->
+
 </body>
 </html>
