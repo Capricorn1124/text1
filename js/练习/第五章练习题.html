@@ -27,40 +27,49 @@ var x=prompt("请输入x的值");
 
 <!--3.编写一个判断某个非负整数是否能够同时被3,5,7整除的函数，-->
 <!--然后在页面上输出1~1000之间所有能同时被3,5,7整除的整数，并要求每行显示6个这样的数。-->
-<script>
+<!--<script>
     var x=prompt("请输入一个非负整数")
     function f(x) {
         if (x >= 0) {
-            if (x % 3 == 0 && x % 5 == 0 && x % 7 == 0) {
-                document.write("可以被3,5,7整除");
+            if (x%3==0&&x%5==0&&x%7==0) {
+                document.write("可以被3,5,7同时整除");
             }
             else {
-                document.write("不可以被3，5，7整除");
+                document.write("不可以被3，5，7同时整除");
             }
         }
         else {
             document.write("对不起，您输入的不是非负整数");
-
         }
     }
-        document.write(f(x));
+       f(x);
     document.write("<br>");
-        var y,i=0;
-
-        for(y=1;y<=1000;y++){
-
-            if(y%3==0&&y%5==0&&y%7==0){
+    var y,i=0;
+    for(y=1;y<=1000;y++){
+        if(y%3==0&&y%5==0&&y%7==0){
                 document.write(y+" ");
                 i++;
                 if(i%6==0){
                     document.write("<br>");
                 }
-
             }
         }
     document.write("<br>");
         document.write("共有"+i+"个数");
 
+</script>-->
+
+<!--5.编写一个非递归函数factorial(n)，计算12!-10!的结果。-->
+<script>
+    function factorical(n){
+        var i;
+        var sum=1;
+        for(i=1;i<=n;i++){
+            sum=sum*i;
+        }
+        return sum;
+    }
+    document.write(factorical(12)-factorical(10));
 </script>
 </body>
 </html>
