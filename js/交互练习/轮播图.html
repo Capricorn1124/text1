@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            border: 0;
+        }
+        #wrapper{
+            width: 450px;
+            height: 600px;
+            margin: 100px auto;
+            position: relative;
+        }
+        #wrapper img{
+            display: none;
+        }
+       #wrapper .select{
+            display: block;
+        }
+        li{
+            list-style: none;
+        }
+        #nav li,#direction div{
+            width: 20px;
+            height: 20px;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+            float: left;
+            margin-left: 5px;
+        }
+        #nav {
+            position: absolute;
+            right: 8px;
+            bottom: 8px;
+        }
+        #direction{
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+        }
+        #nav .select{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="img">
+    <img class="select" src="../img/1.jpeg" alt=""/>
+    <img src="../img/2.jpg" alt=""/>
+    <img src="../img/3.jpg" alt=""/>
+    <img src="../img/4.jpeg" alt=""/>
+    <img src="../img/5.jpg" alt=""/>
+    </div>
+    <ul id="nav">
+        <li class="select">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <div id="direction">
+        <div id="left">&lt;</div>
+        <div id="right">&gt;</div>
+    </div>
+</div>
+
+<script>
+    var oNav=document.getElementById("nav");
+    var aLi=oNav.getElementsByTagName("li");
+    var oWrapper=document.getElementById("wrapper");
+    var aImg=oWrapper.getElementsByTagName("img");
+    var oDiv=document.getElementById("direction");
+    var aDiv=oDiv.getElementsByTagName("div");
+    var oLeft=document.getElementById("left");
+    var oRight=document.getElementById("right");
+    var nowIndex=0;
+    var timer;
+    var i;
+    for(i=0;i<aLi.length;i++){
+     aLi[i].index=i;
+        aLi[i].onmouseover=function(){
+            nowIndex=this.index;
+          for(i=0;i<aLi.length;i++){
+
+              aImg[i].className="";
+              aLi[i].className="";
+          }
+            aLi[nowIndex].className="select";
+            aImg[nowIndex].className="select";
+        };
+    }
+    oLeft.onclick=oRight.onclick=function(){
+        if(this==oLeft){
+            nowIndex--;
+            if(nowIndex==-1){
+                nowIndex=aLi.length-1;
+            }
+        }else{
+            nowIndex++;
+            if(nowIndex==aLi.length){
+                nowIndex=0;
+            }
+        }
+        for(i=0;i<aLi.length;i++){
+
+            aImg[i].className="";
+            aLi[i].className="";
+        }
+        aLi[nowIndex].className="select";
+        aImg[nowIndex].className="select";
+    };
+    play();
+    oWrapper.onmouseover=function(){
+        clearInterval(timer);
+    };
+    oWrapper.onmouseout=function(){
+        play();
+    };
+    function play(){
+        timer=setInterval(function(){
+            oRight.onclick();
+        },1000);
+    }
+
+    function Imgchange(){
+        for(i=0;i<aLi.length;i++){
+
+            aImg[i].className="";
+            aLi[i].className="";
+        }
+        aLi[nowIndex].className="select";
+        aImg[nowIndex].className="select";
+    }
+
+</script>
+</body>
+</html>
