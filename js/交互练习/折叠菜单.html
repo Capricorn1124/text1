@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #wrapper{
+            width: 200px;
+            height: 180px;
+        }
+        h3{
+            background-color: #000;
+            width: 200px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        #nav,#nav2{
+            border: solid 1px #000000;
+            border-top: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="menu">
+        <h3>管理区</h3>
+        <ul id="nav">
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+        </ul>
+    </div>
+    <div id="menu2">
+        <h3>交流区</h3>
+        <ul id="nav2">
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+        </ul>
+    </div>
+</div>
+<script>
+    var oMenu=document.getElementById("menu");
+    var oWrapper=document.getElementById("wrapper");
+    var aH3=oWrapper.getElementsByTagName("h3");
+    var aU1=oWrapper.getElementsByTagName("ul");
+    for(var i=0;i<aH3.length;i++) {
+        aH3[i].index=i;
+        aH3[i].flag=false;
+        aH3[i].onclick=function(){
+            if(this.flag){
+                aU1[this.index].style.display="block";
+                this.flag=false;
+
+            }else{
+                aU1[this.index].style.display="none";
+                this.flag=true;
+
+            }
+        };
+
+    }
+
+</script>
+</body>
+</html>
