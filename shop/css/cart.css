@@ -102,122 +102,111 @@ body{
     background: #3c3b3b;
 }
 /*body开始*/
-#body{
-    height: 750px;
-    overflow: hidden;
+#cart-container{
+    height: 600px;
+    background: #efefef;
 }
-.detail{
+#cart-mine{
+    width: 855px;
+    height: 504px;
+    margin-top: 50px;
+    float: left;
+}
+#cart-price{
+    width: 280px;
+    height: 381px;
+    margin-top: 50px;
+    float: left;
+}
+#cart-mine .cosmetic{
+    width: 134px;
+    height: 134px;
+    float: left;
+}
+#cart-mine .cart-detail{
     width: 840px;
-    height: 210px;
-    margin-bottom: 20px;
+    height: 204px;
+    margin-top: 30px;
 }
-.detail img{
-    height: 136px;
-    width: 136px;
-    border: solid white 3px;
-
-}
-.price{
-    width: 630px;
-    height: 130px;
-    overflow: hidden;
+#cart-mine .close{
     float: right;
+    cursor: pointer;
 }
-#body h2{
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-}
-.price h4{
+#cart-mine .cart-info{
     float: left;
-    height: 16px;
-    width: 620px;
-    padding-bottom: 50px;
+    margin-left: 30px;
 }
-.price h3{
-    background-color: dodgerblue;
-    float: right;
-    height: 28px;
-    width: 28px;
-    position: relative;
-    bottom: 70px;
-    text-align: center;
-    line-height: 36px;
+#cart-mine .price{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+    width: 625px;
 }
-.price .span1{
-    font-size: 28px;
-    position: static;
+#cart-mine .on-sale{
+    margin-right: 50px;
+    font-size: 20px;
 }
-.price span{
-    position: relative;
-    left: 80px;
+#cart-mine input[type="number"]{
+    width: 82px;
+    height: 34px;
+    text-indent: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
 }
-.price input{
-    position: relative;
-    left: 80px;
-}
-.price h5{
-    color: gray;
-    font-weight: 200;
-    float: left;
-    padding-top: 2px;
-}
-.price .span2{
-    color: gray;
-    font-weight: 200;
+#cart-mine .time span{
+    color: #999;
     font-size: 14px;
-    position: relative;
-    left: 400px;
 }
-.commit{
-    height: 380px;
-    width: 286px;
+#cart-mine .time{
+    padding-top: 20px;
+}
+#cart-mine .arrive{
     float: right;
-    position: relative;
-    bottom: 480px;
-    left: 50px;
-    border-left: solid 1px gray;
-    padding-left: 10px;
 }
-.commit .button1{
-    height: 42px;
-    width: 200px;
-    font-size: 30px;
-    background-color: orange;
+#cart-price{
+    border-left: 1px solid #000;
+}
+#cart-price .btn{
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#cart-price .continue{
+    background: orange;
+}
+#cart-price .continue:hover{
+    background: #000;
+}
+#cart-price .submit{
+    background: #000000;
+}
+#cart-price .submit:hover{
+    background: orange;
+}
+#cart-price .description{
+    margin-top: 40px;
     margin-bottom: 20px;
-    position: relative;
-    left: 40px;
+    margin-left: 70px;
+}
+#cart-price .gap{
+    margin-right: 70px;
+}
+#cart-price .total{
+    margin-left: 70px;
+}
+#cart-price .total .sum{
+    font-weight: bolder;
+}
+#cart-price .total div{
+    border-top: 1px solid #000;
+}
 
-}
-.commit a{
-    color: #ffffff;
-}
-.commit h4{
-    font-weight: 200;
-}
-.commit ul{
-    margin-top: 10px;
-margin-bottom: 10px;
-    line-height: 26px;
-
-}
-.commit .button2{
-    height: 42px;
-    width: 200px;
-    font-size: 30px;
-    background-color: #000;
-    margin-bottom: 20px;
-    position: relative;
-    left: 40px;
-    top: 40px;
-
-}
-.commit .button1:hover{
-    background-color: #000
-}
-.commit .button2:hover{
-    background-color: orange;
-}
 /*footer开始*/
 #footer{
     width: 1903px;
