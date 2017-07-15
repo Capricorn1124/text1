@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var ob1={
+        name:"wngwu",
+        age:14,
+        brother:{
+            name:'qwe',
+            age:'15'
+        }
+    };
+    var ob2={
+        name:'zxc',
+        sex:'女',
+        tel:'123456789'
+    };
+    /**
+     *@param target 被合并的目标对象
+     * @param obj 要合并的目标对象
+     * return 返回合并的新对象
+     */
+    function extend(target,obj){
+        for(p in obj){
+            console.log(obj);
+            target[p]=obj[p];
+        }
+        return target;
+    }
+    var ob=extend(ob2,ob1);
+    console.log(ob);
+    ob.brother.name='lpl';
+    console.log(ob1.brother.name);
+</script>
+</html>

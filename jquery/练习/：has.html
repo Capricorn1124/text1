@@ -5,19 +5,20 @@
     <title></title>
 </head>
 <body>
-    <div class="aa">
-        <ul>
+
+        <ul id="ul1">
             <li class="bb">11</li>
             <li>22</li>
             <li>33</li>
         </ul>
-    </div>
     <div></div>
     <div></div>
-    <script src="jquery-1.11.2.js">
-        $('.aa ul.bb').css("background","red");
-
-
-    </script>
+    <script src="jquery-1.11.2.js"></script>
+        <script>
+//            $('li:eq(1)').css('background','red');
+            $('#ul1:has(.bb)').css('background','red');
+            alert($("#ul1"));
+            console.log($("#ul1"))
+        </script>
 </body>
 </html>
