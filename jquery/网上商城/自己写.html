@@ -277,7 +277,7 @@
             <div id="jnBrandTab">
                 <h2 title="品牌活动">品牌活动</h2>
                 <ul>
-                    <li><a title="运动" href="#nogo">运动</a></li>
+                    <li class="chos"><a title="运动" href="#nogo">运动</a></li>
                     <li><a title="女鞋" href="#nogo">女鞋</a></li>
                     <li><a title="男鞋" href="#nogo">男鞋</a></li>
                     <li><a title="Applife" href="#nogo">童鞋</a></li>
@@ -363,6 +363,7 @@
 <div id="footer">Copyright &copy; 2009 - 2012 JaneShop Inc. </div>
 <!--底部结束-->
 <script src="jquery-1.11.2.js"></script>
+<script src="jquery.cookie.js"></script>
 <script>
     $(function(){
    $("#inputSearch").on("focus",function(){
@@ -377,8 +378,10 @@
         $("#nav li").hover(function(){
           $(this).children(".jnNav").show();
 
+
         },function(){
             $(this).children(".jnNav").hide();
+
         });
         var $imgs = $("#JS_imgWrap img");
         $imgs.each(function(index, elem){
@@ -392,18 +395,19 @@
             nowIndex=$(this).index();
            change();
         });
-        setInterval(function(){
+
+       var item= setInterval(function(){
             nowIndex++;
             if(nowIndex==$menus.length){
                 nowIndex=0;
             }
           change();
-        },1000)
+        },1000);
      function change( ){
             $menus.eq(nowIndex).addClass("chos").siblings().removeClass("chos");
             $imgs.eq(nowIndex).fadeIn().siblings().fadeOut();
         }
-    });
+
     $("#jnNoticeInfo li a").hover(function (e) {
         var $tip = $(".tip");
         this.tip=this.title;
@@ -423,7 +427,8 @@
         $(this).removeAttr("title");
 
     },function(){
-        $(this).attr("title",this.tip)
+        $(this).attr("title",this.tip);
+        $(".tip").remove();
     }).on("mousemove",function(e){
         $(".tip").offset(
                 {
@@ -432,6 +437,27 @@
                 }
         )
     })
+$("#jnBrandTab li ").on("click",function(){
+   $(this).addClass("chos").siblings().removeClass("chos");
+    $("#jnBrandList").animate({
+        left: -$("#jnBrandList li").innerWidth() * 4 * $(this).index()
+    }, 1000);
+});
+    if($.cookie("skin")){
+        var skin= $.cookie("skin");
+       changeSkin(skin);
+    }
+$("#skin li").on("click",function(){
+    var skin=$(this).attr("id");
+    $.cookie("skin", skin, {expires: 30});
+   changeSkin(skin);
+});
+    function changeSkin(skin){
+        $("#cssfile").attr("href","styles/skin/"+skin +".css");
+        $("#"+skin).addClass("selected").siblings().removeClass("selected");
+    }
+    });
+
 
 </script>
 </body>
